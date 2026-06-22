@@ -1,6 +1,7 @@
 name: app-build-action
 #推送Tag时触发
 on:
+  workflow_dispatch: # 加了这一行，Actions 页面就会出现手动执行按钮
   push:
     tags:
       - "v*"
